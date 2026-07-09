@@ -70,20 +70,40 @@ public class Operators {
         System.out.println("4. /");
         System.out.println("5. %");
         int operator = input.nextInt();
-        if(operator == 1) System.out.println(a+b);
-        else if (operator == 2) {
-            System.out.println(a-b);
+//        if(operator == 1) System.out.println(a+b);
+//        else if (operator == 2) {
+//            System.out.println(a-b);
+//        }
+//        else if (operator == 3) {
+//            System.out.println(a*b);
+//        }
+//        else if (operator == 4) {
+//            System.out.println(a/b);
+//        }
+//        else if (operator == 5) {
+//            System.out.println(a%b);
+//        } else System.out.println("Invalid operator");
+        //switch case
+        switch (operator) {
+            case 1:
+                System.out.println(a+b);
+                break;
+            case 2:
+                System.out.println(a-b);
+                break;
+            case 3:
+                System.out.println(a*b);
+                break;
+            case 4:
+                System.out.println(a/b);
+                break;
+            case 5:
+                System.out.println(a%b);
+                break;
+            default:
+                System.out.println("Invalid operator");
+                break;
         }
-        else if (operator == 3) {
-            System.out.println(a*b);
-        }
-        else if (operator == 4) {
-            System.out.println(a/b);
-        }
-        else if (operator == 5) {
-            System.out.println(a%b);
-        } else System.out.println("Invalid operator");
-
 
     }
 }
