@@ -13,7 +13,7 @@ public class Day8_oops1 {
         //we can create a class for it
         Student student1 = new Student(1,"Nikhil",87.6);
         Student student2 = new Student(2,"Rahul",99);
-
+        student1.marks=0.0f;
         ///  Student student - it will be stored inside our stack memory at the compile time
         /// objects will be stored inside heap memory -runtime
 //        student1.rollNo = 120;
