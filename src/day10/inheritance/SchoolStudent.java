@@ -12,6 +12,9 @@ public class SchoolStudent extends Student {
         // thats how we call parent class constructor
         super(name,age);
     }
+//    public void admission(){
+//        System.out.println("School admission");
+//    }
     public String getName(){
         return "Example";
     }

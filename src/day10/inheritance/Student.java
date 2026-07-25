@@ -5,16 +5,28 @@ public class Student {
     private int id;
     private String name;
     private int age;
+    // constructor overloading
+    public Student(){
+        System.out.println("Student created");
+        this.id = ++counter;
 
-//    public Student(){
-//        System.out.println("Student created");
-//    }
+    }
     //constructor
     public Student(String name,int age){
         System.out.println("Student created with name, age");
         this.name = name;
         this.age = age;
         this.id = ++counter;
+    }
+    public Student(String name){
+        System.out.println("Student created with name, age");
+        this.name = name;
+        this.id = ++counter;
+    }
+
+    //dynamic method dispatch
+    public void admission(){
+        System.out.println("General admission");
     }
 
     public int getId() {

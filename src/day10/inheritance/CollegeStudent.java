@@ -12,6 +12,9 @@ public class CollegeStudent extends Student {
         this.fees = fees;
 
     }
+    public void admission(){
+        System.out.println("College admission");
+    }
     public String getName(){
         return "Example";
     }

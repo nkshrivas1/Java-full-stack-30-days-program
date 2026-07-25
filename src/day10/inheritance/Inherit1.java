@@ -1,5 +1,8 @@
 package day10.inheritance;
 
+import day11.CashPayment;
+import day11.Payment;
+
 public class Inherit1 {
     // Inheritance -it is an oop feature in which one class acquires
     // the properties and beahviour of another class
@@ -26,9 +29,14 @@ public class Inherit1 {
 
     static void main() {
         CollegeStudent std1 = new CollegeStudent("Jain College",123456.00f,"Nikhil",24);
-        System.out.println(std1.toString());
+        std1.admission();
         Student schStd1 = new SchoolStudent("dps",21343,"Rahul",17);
-        System.out.println(schStd1.toString());
+//        System.out.println(schStd1.toString());
+        schStd1.admission();
+        Payment p = new CashPayment();
+        p.pay(100);
+
+
     }
     // EMployee management
     //parent
